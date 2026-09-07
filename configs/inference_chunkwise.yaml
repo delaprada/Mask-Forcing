@@ -1,0 +1,15 @@
+# Inference config for the chunk-wise (3 latent frames per block) Mask Forcing model.
+# Merged on top of configs/default_config.yaml by inference.py.
+
+# Presence of `denoising_step_list` selects the few-step CausalInferencePipeline.
+denoising_step_list:
+- 1000
+- 750
+- 500
+- 250
+warp_denoising_step: true
+
+num_frame_per_block: 3
+
+model_kwargs:
+  timestep_shift: 5.0

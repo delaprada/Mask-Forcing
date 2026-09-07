@@ -1,0 +1,23 @@
+# Outputs
+output/
+logs/
+*.mp4
+
+# Model weights / vendored base model.
+# NOTE: no trailing slash on purpose — these are symlinks in the dev tree
+# (-> ../Causal-Forcing/...), and a `dir/` pattern would not match a symlink.
+wan_models
+checkpoints
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
